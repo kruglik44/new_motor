@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+      <ion-title>
+         Контакты
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="8" offset-xl="2">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Как с нами связаться?
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content style="color: black;">
+            <ion-list>
+              <ion-item *ngFor = "let data of contactsArray" lines="none">
+                <ion-icon slot="start" ios="{{data.icon}}" md="{{data.icon}}"></ion-icon>
+                <ion-label class="ion-text-wrap">{{data.data}}</ion-label>
+              </ion-item>
+              <h2><b>Телефоны логистов</b></h2>
+              <ion-item lines="none">
+                <ion-icon slot="start" ios="call-outline" md="call-outline"></ion-icon>
+                <ion-label class="ion-text-wrap">+7(910)803-95-55 Павел</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon slot="start" ios="call-outline" md="call-outline"></ion-icon>
+                <ion-label class="ion-text-wrap">+7(910)927-07-00 Нина</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon slot="start" ios="call-outline" md="call-outline"></ion-icon>
+                <ion-label class="ion-text-wrap">+7(910)370-03-49 Алексей</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Наше расположение
+            </ion-card-title>
+            <ion-card-subtitle>
+              Мы находимся на въезде в Кострому со стороны Ярославля
+            </ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <img src="../../../assets/images/base.jpg" alt="">
+          </ion-card-content>
+        </ion-card>
+        <div class="container">
+          <ya-map [center]="[57.735991, 40.837536]" [zoom]="12">
+            <ya-placemark [geometry]="[57.735991, 40.837536]"></ya-placemark>
+          </ya-map>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+

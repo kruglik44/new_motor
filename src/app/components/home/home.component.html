@@ -1,0 +1,85 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+      <ion-title>
+         Главная
+      </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content>
+  <ion-grid >
+    <ion-row>
+      <div class="six"><h1><span>Грузовые перевозки по России</span></h1></div>
+      <ion-col size-xs='12' size-xl="6" offset-xl='3'>
+        <!-- <h1 style="text-align: center; margin-top: 10px; margin-bottom: 15px;">Грузовые перевозки по России</h1> -->
+        <ion-card>
+          <ion-card-content>
+            <img src="../../../assets/images/fh476.jpg" alt="">
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xl = "8" offset-xl = "2">
+        
+        <h4 style="text-align: justify;">Компания Kruglov Logistics предоставляет широкий спектр логистическх услуг. Мы работаем как с крупными предприятиями, 
+          так и с частными заказчиками. Уже более 10 лет мы предлагаем нашим партнерам оптимальные решения по доставке грузов по всей России. Мы гарантируем оперативную доставку и сохранность груза от двери до двери.</h4>
+       
+      </ion-col>
+    </ion-row>
+    <ion-row style="background-color: #0093E9;
+    background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
+    ">
+      <ion-col size-xl = "10" offset-xl="1">
+       <ion-row class="ion-align-items-center"> 
+          <ion-col size-xs="12" size-md="3" >
+            <h1 style="color: white; text-align: center; font-size: 40px;">12 лет</h1>
+            <p style="color: white; text-align: center; font-size: 24px;">перевозим грузы по всей России</p>
+          </ion-col>
+          <ion-col size-xs="12" size-md="3" >
+            <h1 style="color: white; text-align: center; font-size: 40px;">30</h1>
+            <p style=" color: white;text-align: center; font-size: 24px;">автомобилей от 1.5 до 20 тонн</p>
+          </ion-col>
+          <ion-col size-xs="12" size-md="3" >
+            <h1 style="color: white; text-align: center; font-size: 40px;">40 </h1>
+            <p style=" color: white;text-align: center; font-size: 24px;">постоянных клиентов в России и СНГ</p>
+          </ion-col>
+          <ion-col size-xs="12" size-md="3" >
+            <h1 style="color: white; text-align: center; font-size: 40px;">24/7</h1>
+            <p style=" color: white;text-align: center; font-size: 24px;">поддержка и мониторинг</p>
+          </ion-col>
+       </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xl = "8" offset-xl = "2">
+        <h4 style="text-align: justify; margin-top: 15px; margin-bottom: 15px;">Для выполнения всех заказов мы используем исключительно собственный транспорт, что уменьшает издержки и избавляет от посредников. Мы предлагаем гибкие условия сотрудничества и индивидуальный подход к каждому клиенту.</h4>
+        
+        <ion-button expand = "block" class = "perevozka-button" (click) = "presentModal()">
+          Рассчитать стоимость перевозки
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col size-xl = "8" offset-xl = "2">
+          <ion-row class="ion-align-items-center">
+            <ion-col *ngFor = "let item of data" size-md = "6" size-xs = "12">
+              <div class="item">
+                <a aria-labelledby="person1"></a>
+                <img src={{item.photo}} alt=''>
+                <div class="item__overlay">
+                  <h3 id="person1" aria-hidden="true">{{item.header}}</h3>
+                  <div class="item__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

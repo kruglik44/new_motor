@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-button (click)="dismiss()">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+      <ion-title>
+          {{info.title}}
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Тип автомобиля</ion-label>
+                <ion-select [(ngModel)] = "tariff" [disabled] = "tariff" interface="action-sheet">
+                  <ion-select-option value="60">20 тонн реф.</ion-select-option>
+                  <ion-select-option value="55">20 тонн тент</ion-select-option>
+                  <ion-select-option value="50">15 тонн реф.</ion-select-option>
+                  <ion-select-option value="35">7 тонн реф</ion-select-option>
+                  <ion-select-option value="30">5 тонн реф</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div *ngIf = "tariff" class="container">
+                <ya-map [center]="[55.751952, 37.600739]" [state]="{ controls: [] }">
+                  <ya-control type="RoutePanel" [parameters]="routePanelParameters" (ready)="onRoutePanelReady($event)">
+                  </ya-control>
+                  <ya-control type="ZoomControl" [parameters]="zoomControlParameters"></ya-control>
+                 </ya-map>
+               </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

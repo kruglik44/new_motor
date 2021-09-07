@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+      <ion-title>
+         Автопарк
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs='12' size-xl='4'>
+        <ion-card (click) = "selectCar('fh12')">
+          <img src="../../../assets/images/fh1042.jpg"/>
+          <ion-card-header>
+            <ion-card-subtitle>Рефрижератор</ion-card-subtitle>
+            <ion-card-title>Volvo FH-12, 420 Сил</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Надёжный магистральный грузовик. Работает в сцепке с полуприцепом-рефрижератором Krone с системой автоматического поддержания требуемого температурного режима. Предназначается для транспортировки грузов, требующих глубокой заморозки или охлаждения.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs='12' size-xl='4'>
+        <ion-card (click) = "selectCar('fh2020')">
+          <img src="../../../assets/images/fhwhite.jpg"/>
+          <ion-card-header>
+            <ion-card-subtitle>Рефрижератор</ion-card-subtitle>
+            <ion-card-title>Volvo FH-12, 500 Сил</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Крупнотоннажный магистральный грузовик 2020 года выпуска. Работает в сцепке с полуприцепом-рефрижератором Krone с системой автоматического поддержания требуемого температурного режима. Предназначается для транспортировки грузов, требующих глубокой заморозки или охлаждения.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs='12' size-xl='4'>
+        <ion-card>
+          <img src="../../../assets/images/atego.jpg"/>
+          <ion-card-header>
+            <ion-card-subtitle>Рефрижератор</ion-card-subtitle>
+            <ion-card-title>Mercedes Atego</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Среднетоннажный грузовик от немецкого производителя грузоподъёмостью 7 тонн, оборудован кузовом-рефрижератором.
+            Занимает промежуточное положение между крупнотоннажными грузовиками и небольшими фургонами.    
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs='12' size-xl='4'>
+        <ion-card>
+          <img src="../../../assets/images/fhtent.jpg"/>
+          <ion-card-header>
+            <ion-card-subtitle>Тент</ion-card-subtitle>
+            <ion-card-title>Volvo FH-12, 420 Сил</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Надежный магистральный грузовик. Работает в сцепке с тентованным полуприцепом, прекрасно подходит для перевозок коммерческих грузов, не требовательных к температурному режиму и нуждающихся в защите от атмосферных воздействий
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs='12' size-xl='4'>
+        <ion-card (click) = "selectCar('fm')">
+          <img src="../../../assets/images/fh770.jpg"/>
+          <ion-card-header>
+            <ion-card-subtitle>Рефрижератор</ion-card-subtitle>
+            <ion-card-title>Volvo FM</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Шведский магистральный грузовик грузоподъёмностью 15 тонн. Оборудован кузовом-рефрижератором. Отлично чувствует себя в городских условиях ввиду своей манёвренности и небольших относительно фур размеров. 
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs='12' size-xl='4'>
+        <ion-card>
+          <img src="../../../assets/images/hyundai.jpg"/>
+          <ion-card-header>
+            <ion-card-subtitle>Рефрижератор</ion-card-subtitle>
+            <ion-card-title>Hyundai HD 78</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Корейский грузовик, оборудованный кузовом-рефрижератором, грузоподъемностью 5 тонн. Прекрасно чувствует себя в городских условиях и хорошо подходит для транспортировки небольших грузов.  
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

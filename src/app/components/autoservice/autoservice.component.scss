@@ -1,0 +1,54 @@
+h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #37474F;
+}
+
+p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #90A4AE;
+}
+
+.esia-button{
+    width:  280px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #0065B1;
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.screen{
+    width: 360px;
+    height: 640px;
+    border-width: 2px;
+    border-color: black;
+    border: solid;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.screen2{
+    width: 360px;
+    height: 640px;
+    border-width: 2px;
+    border-color: black;
+    border: solid;
+    padding-left: 16px;
+}
+
+hr{
+    border: 1px solid #CFD8DC;
+}
